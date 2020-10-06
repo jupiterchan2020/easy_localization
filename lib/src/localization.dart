@@ -27,7 +27,7 @@ class Localization {
     return translations == null ? false : true;
   }
 
-  String tr(String key,
+  String eltr(String key,
       {List<String> args, Map<String, String> namedArgs, String gender}) {
     String res;
 
