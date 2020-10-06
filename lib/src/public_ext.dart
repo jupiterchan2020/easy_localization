@@ -12,13 +12,13 @@ import 'public.dart' as ez;
 /// ```
 extension TextTranslateExtension on Text {
   /// {@macro tr}
-  Text tr(
+  Text eltr(
           {BuildContext context,
           List<String> args,
           Map<String, String> namedArgs,
           String gender}) =>
       Text(
-          ez.tr(data,
+          ez.eltr(data,
               context: context,
               args: args,
               namedArgs: namedArgs,
@@ -61,9 +61,9 @@ extension TextTranslateExtension on Text {
 /// ```
 extension StringTranslateExtension on String {
   /// {@macro tr}
-  String tr(
+  String eltr(
           {List<String> args, Map<String, String> namedArgs, String gender}) =>
-      ez.tr(this, args: args, namedArgs: namedArgs, gender: gender);
+      ez.eltr(this, args: args, namedArgs: namedArgs, gender: gender);
 
   /// {@macro plural}
   String plural(num value, {NumberFormat format}) =>
