@@ -31,16 +31,16 @@ import 'localization.dart';
 /// Text('gender').tr(gender: _gender ? "female" : "male"), // gender
 /// ```
 /// {@endtemplate}
-String tr(String key,
+String eltr(String key,
     {BuildContext context,
     List<String> args,
     Map<String, String> namedArgs,
     String gender}) {
   return context == null
       ? Localization.instance
-          .tr(key, args: args, namedArgs: namedArgs, gender: gender)
+          .eltr(key, args: args, namedArgs: namedArgs, gender: gender)
       : Localization.of(context)
-          .tr(key, args: args, namedArgs: namedArgs, gender: gender);
+          .eltr(key, args: args, namedArgs: namedArgs, gender: gender);
 }
 
 /// {@template plural}
